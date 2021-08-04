@@ -22,3 +22,15 @@ after_success:
   - docker push cosmosyst/multi-nginx
   - docker push cosmosyst/multi-server
   - docker push cosmosyst/multi-worker
+
+#deploy:
+#  provider: elasticbeanstalk
+#  region: 'us-east-1'
+#  app: 'multi-docker'
+#  env: 'MultiDocker-env'
+#  bucket_name: 'elasticbeanstalk-us-east-1-923445559289'
+#  bucket_path: 'docker-multi'
+#  on:
+#    branch: master
+#  access_key_id: $AWS_ACCESS_KEY
+#  secret_access_key: $AWS_SECRET_KEY
